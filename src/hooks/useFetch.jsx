@@ -5,7 +5,6 @@ export const useFetch = () => {
     const [data, setData] = React.useState(null);
     
     const fetchByName = (url,name) => {
-      console.log('fetch',name)
       setLoading(true);
       getByName(url,name).then((response) => {
         setData(response);     
